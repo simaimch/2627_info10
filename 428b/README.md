@@ -1,4 +1,3 @@
-
 # Snake 3D – Aufgaben
 
 Bearbeite die Dateien in **`src/aufgaben/`** der Reihe nach: `aufgabe01.ts` bis `aufgabe12.ts`.

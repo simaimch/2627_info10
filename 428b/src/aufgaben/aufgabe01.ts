@@ -30,21 +30,21 @@
 //
 //  Schreibe deine Antworten als Kommentare unter diese Zeilen:
 //
-//  1.höhe würde auf 40 geändert, das feld wurde größer
-//  2.Breite würde auf 60 verändert, delf wurde breiter 
-//  3.schrittdauer wurde auf 200 geändert 
-//  4.münzen würden verdoppelt
+//  1.
+//  2.
+//  3.
+//  4.
 //
 //  SO TESTEST DU
 //  Die Spielwelt hat die Größe, die du eingestellt hast.
 // =====================================================================
 
 /** Anzahl der Zeilen der Spielwelt */
-export let hoehe = 40;
+export let hoehe = 15;
 /** Anzahl der Spalten der Spielwelt */
-export let breite = 60;
+export let breite = 20;
 /** Zeit zwischen zwei Schritten der Schlange in Millisekunden */
-export let schrittDauerMs = 200;
+export let schrittDauerMs = 150;
 /** Kleinste und größte Anzahl an Münzen (zufällig dazwischen) */
 export let minMuenzen = 1;
-export let maxMuenzen = 10;
+export let maxMuenzen = 5;

@@ -34,5 +34,7 @@ import { istMauer } from '../welt';
 
 /** Beendet das Spiel, wenn auf dem Feld eine Mauer steht. */
 export function pruefeMauer(neuerKopf: number[]): void {
-  // TODO
+  if(istMauer(neuerKopf)){
+    zustand.gameOver = true;
+  }
 }
