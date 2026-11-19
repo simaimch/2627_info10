@@ -49,7 +49,15 @@ export function naechstesFeld(feld: number[], richtung: string): number[] {
   if (richtung === 'rechts') {
     return [zeile, spalte + 1];
   }
-  // TODO
+  if (richtung === 'links') {
+    return [zeile, spalte - 1];
+  }
+  if (richtung === 'oben') {
+    return [zeile - 1, spalte];
+  }
+  if (richtung === 'unten') {
+    return [zeile + 1, spalte];
+  }
 
   return [zeile, spalte];
 }
