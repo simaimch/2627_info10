@@ -30,21 +30,21 @@
 //
 //  Schreibe deine Antworten als Kommentare unter diese Zeilen:
 //
-//  1.export let hoehe = x; das x kann ich beliebig bestimmen mit einber positiven zahl , dies ändert dann die zeilenanzahl des spieles
-//  2. die schlange wird schneller je kleiner die zahl ist 
-//  3.es ist zufällig wie viele münzen kommen zb bei min. 1 und max. 15 können von 1 bis 15 münzen zufällig viele münzen auftauchen
-//  4.dann ist es immer die mitte von min und max
+//  1.Export let hoehe/breite = x; das x kann man beliebig bestimmen mit einer ganzen, positiven Zahl, dies ändert dann die Breite oder Höhe des Spiels
+//  2.Die schlange wird schneller wenn die Zahl kleiner wird,weil der abstand bei den Schritten kleiner wird
+//  3.Es wird immer zufällig bestimmt wie viele münzen es gibt und es wird zwischen den min und max anzahl ausgewählt
+//  4.Es wird immer die mitte von min und max gewählt
 //
 //  SO TESTEST DU
 //  Die Spielwelt hat die Größe, die du eingestellt hast.
 // =====================================================================
 
 /** Anzahl der Zeilen der Spielwelt */
-export let hoehe = 25;
+export let hoehe = 20;
 /** Anzahl der Spalten der Spielwelt */
-export let breite = 25;
+export let breite = 20;
 /** Zeit zwischen zwei Schritten der Schlange in Millisekunden */
-export let schrittDauerMs = 120;
+export let schrittDauerMs = 150;
 /** Kleinste und größte Anzahl an Münzen (zufällig dazwischen) */
 export let minMuenzen = 3;
 export let maxMuenzen = 8;
