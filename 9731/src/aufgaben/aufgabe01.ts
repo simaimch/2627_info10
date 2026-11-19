@@ -30,21 +30,21 @@
 //
 //  Schreibe deine Antworten als Kommentare unter diese Zeilen:
 //
-//  1. hoehe auf 99 es wurde gröser
-//  2.breite geändert auf 50 es wurde breiter
-//  3. schrittdauer ms auf 20 er wurde schneller
-//  4.munzen spawn
+//  1.
+//  2.
+//  3.
+//  4.
 //
 //  SO TESTEST DU
 //  Die Spielwelt hat die Größe, die du eingestellt hast.
 // =====================================================================
 
 /** Anzahl der Zeilen der Spielwelt */
-export let hoehe = 99;
+export let hoehe = 15;
 /** Anzahl der Spalten der Spielwelt */
-export let breite = 50;
+export let breite = 20;
 /** Zeit zwischen zwei Schritten der Schlange in Millisekunden */
-export let schrittDauerMs = 20;
+export let schrittDauerMs = 150;
 /** Kleinste und größte Anzahl an Münzen (zufällig dazwischen) */
-export let minMuenzen = 100;
-export let maxMuenzen = 150;
+export let minMuenzen = 1;
+export let maxMuenzen = 5;

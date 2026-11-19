@@ -42,15 +42,37 @@
 import { zustand } from '../zustand';
 
 export function tasteHoch(): void {
+  if (zustand.gameOver) {
+    return;
+  }
+  // Umdrehen auf der Stelle ist nicht erlaubt.
+  if (zustand.richtung !== 'unten') {
+    zustand.richtung = 'oben';
+  }
+  zustand.gestartet = true;
   // TODO
 }
 
 export function tasteRunter(): void {
-  // TODO
+  if (zustand.gameOver) {
+    return;
+  }
+  // Umdrehen auf der Stelle ist nicht erlaubt.
+  if (zustand.richtung !== 'oben') {
+    zustand.richtung = 'unten';
+  }
+  zustand.gestartet = true; // TODO
 }
 
 export function tasteLinks(): void {
-  // TODO
+  if (zustand.gameOver) {
+    return;
+  }
+  // Umdrehen auf der Stelle ist nicht erlaubt.
+  if (zustand.richtung !== 'rechts') {
+    zustand.richtung = 'links';
+  }
+  zustand.gestartet = true;
 }
 
 export function tasteRechts(): void {
