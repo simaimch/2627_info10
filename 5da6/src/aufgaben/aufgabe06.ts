@@ -41,4 +41,7 @@
 export function gleichesFeld(a: number[], b: number[]): boolean {
   // TODO
   return false;
+  function gleichesFeld(a, b) {
+    return a[0] === b[0] && a[1] === b[1];
+  }
 }

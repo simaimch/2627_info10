@@ -40,9 +40,9 @@
 // =====================================================================
 
 /** Anzahl der Zeilen der Spielwelt */
-export let hoehe = 40;
+export let hoehe = 20;
 /** Anzahl der Spalten der Spielwelt */
-export let breite = 60;
+export let breite = 30;
 /** Zeit zwischen zwei Schritten der Schlange in Millisekunden */
 export let schrittDauerMs = 200;
 /** Kleinste und größte Anzahl an Münzen (zufällig dazwischen) */

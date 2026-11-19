@@ -42,16 +42,29 @@
 import { zustand } from '../zustand';
 
 export function tasteHoch(): void {
+  if (zustand.richtung !== 'unten') {
+    zustand.richtung = 'oben';
+  }
+  zustand.gestartet = true;
+}
+
+export function tasteRunter(): void { if (zustand.richtung !== 'oben') {
+  zustand.richtung = 'unten';
+}
+zustand.gestartet = true;
+
   // TODO
 }
 
-export function tasteRunter(): void {
-  // TODO
+export function tasteLinks(): void { if (zustand.richtung !== 'rechts') {
+  zustand.richtung = 'links';
 }
+zustand.gestartet = true;
+}
+  // TODO
 
-export function tasteLinks(): void {
-  // TODO
-}
+
+
 
 export function tasteRechts(): void {
   if (zustand.gameOver) {
