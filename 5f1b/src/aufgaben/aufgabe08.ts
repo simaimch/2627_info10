@@ -48,7 +48,9 @@ import { gleichesFeld } from './aufgabe06';
 /** Ist das Feld Teil der Schlange? */
 export function istSchlange(feld: number[]): boolean {
   for (const teil of zustand.schlange) {
-    // TODO
+    if (gleichesFeld(feld, teil)) {
+      return true;
+    }
   }
   return false;
 }
@@ -56,7 +58,9 @@ export function istSchlange(feld: number[]): boolean {
 /** Liegt auf dem Feld eine Münze? */
 export function istMuenze(feld: number[]): boolean {
   for (const muenze of zustand.muenzen) {
-    // TODO
+    if (gleichesFeld(feld, muenze)) {
+      return true;
+    }
   }
   return false;
 }

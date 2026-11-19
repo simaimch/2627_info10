@@ -43,5 +43,10 @@ import { gleichesFeld } from './aufgabe06';
 
 /** Beendet das Spiel, wenn der Kopf auf dem eigenen Schwanz landen würde. */
 export function pruefeSchwanz(neuerKopf: number[]): void {
-  // TODO
+  for (let i = 0; i < zustand.schlange.length - 1; i++) {
+    if (gleichesFeld(neuerKopf, zustand.schlange[i])) {
+      zustand.gameOver = true;
+      return;
+    }
+  }
 }

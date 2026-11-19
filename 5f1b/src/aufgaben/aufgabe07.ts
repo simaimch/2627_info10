@@ -45,6 +45,5 @@ import { hoehe, breite } from './aufgabe01';
 
 /** Liegt das Feld innerhalb der Spielwelt? */
 export function imSpielfeld(feld: number[]): boolean {
-  // TODO
-  return true;
+  return feld[0] >= 0 && feld[0] < hoehe && feld[1] >= 0 && feld[1] < breite;
 }

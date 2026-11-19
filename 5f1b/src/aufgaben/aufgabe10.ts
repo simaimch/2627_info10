@@ -44,7 +44,15 @@ import { zustand } from '../zustand';
 import { gleichesFeld } from './aufgabe06';
 
 /** Position der Münze auf dem Feld in zustand.muenzen, oder -1. */
-export function muenzIndex(feld: number[]): number {
-  // TODO
-  return -1;
+export function muenzIndex(feld: number[]): number;
+{
+  const muenzIndex = zustand.muenzen.findIndex((muenze) =>
+    gleichesFeld(neuerKopf, muenze)
+  );
+  const muenzeGefunden = muenzIndex !== -1;
+  zustand.schlange.unshift(neuerKopf);
+  if (muenzeGefunden) {
+    zustand.muenzen.splice(muenzIndex, 1);
+    zustand.punkte++;
+  }
 }

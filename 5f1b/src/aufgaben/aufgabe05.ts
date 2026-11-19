@@ -31,5 +31,7 @@ import { zustand } from '../zustand';
 import { neuesSpiel } from '../welt';
 
 export function tasteLeertaste(): void {
-  // TODO
+  if (zustand.gameOver) {
+    neuesSpiel();
+  }
 }

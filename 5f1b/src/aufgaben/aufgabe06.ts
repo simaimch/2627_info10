@@ -33,12 +33,11 @@
 //  Schreibe ganz unten in diese Datei:
 //      console.log(gleichesFeld([3, 4], [3, 4]));   // muss true sein
 //      console.log(gleichesFeld([3, 4], [4, 3]));   // muss false sein
-//      console.log(gleichesFeld([3, 4], [3, 5]));   // muss false sein
+//      console.log(gleichesFeld([3, 4], [3, 4]));   // muss false sein
 //  Schau in die Konsole. Lösche die Testzeilen danach wieder.
 // =====================================================================
 
 /** Sind a und b dasselbe Feld? */
 export function gleichesFeld(a: number[], b: number[]): boolean {
-  // TODO
-  return false;
+  return a[0] === b[0] && a[1] === b[1];
 }

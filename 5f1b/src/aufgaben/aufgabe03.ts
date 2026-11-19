@@ -52,20 +52,33 @@ export function tasteHoch(): void {
 }
 
 export function tasteRunter(): void {
-  // TODO
+  if (zustand.gameOver) {
+    return;
+  }
+  if (zustand.richtung !== 'hoch') {
+    zustand.richtung = 'runter';
+  }
+  zustand.gestartet = true;
 }
 
 export function tasteLinks(): void {
-  // TODO
+  if (zustand.gameOver) {
+    return;
+  }
+  if (zustand.richtung !== 'rechts') {
+    zustand.richtung = 'links';
+  }
+  zustand.gestartet = true;
 }
 
 export function tasteRechts(): void {
   if (zustand.gameOver) {
     return;
   }
-  // Umdrehen auf der Stelle ist nicht erlaubt.
   if (zustand.richtung !== 'links') {
     zustand.richtung = 'rechts';
   }
   zustand.gestartet = true;
 }
+
+// Umdrehen auf der Stelle ist nicht erlaubt.
